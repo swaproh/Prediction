@@ -3,13 +3,8 @@
  */
 package com.prediction.controller;
 
-import java.io.IOException;
-
 import java.util.List;
 import java.util.Optional;
-
-import javax.mail.MessagingException;
-import javax.mail.internet.AddressException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,9 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.prediction.entity.Job;
 import com.prediction.exception.MyJobException;
 import com.prediction.exception.UserNotfoundException;
-import com.prediction.service.EmailService;
 import com.prediction.service.IPostJobService;
-import com.prediction.service.ISearchJobService;
 import com.prediction.service.IUpdateJobService;
 
 /**
@@ -49,8 +42,7 @@ public class AdminController {
 	@Autowired
 	private IUpdateJobService updateJobService;
 	
-	@Autowired
-	private ISearchJobService searchJobService;
+
 	
 	
 	
